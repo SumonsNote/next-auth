@@ -1,17 +1,14 @@
-/* eslint-disable react/no-unescaped-entities */
-import LoginForm from "@/components/LoginForm";
 import Link from "next/link";
-export default function Home() {
+
+export default function Landing() {
   return (
-    <div className="flex flex-col justify-center items-center m-4">
-      <h1 className="text-3xl my-3">Hey, time to Sign In</h1>
-      <LoginForm />
-      <p className="my-3">
-        Don't you have an account?
-        <Link href="register" className="mx-2 underline">
-          Register
+    <>
+      <div>Landing Page</div>
+      <div className="flex flex-col justify-center items-center p-8">
+        <Link className="text-3xl underline" href="/products">
+          All Products
         </Link>
-      </p>
-    </div>
+      </div>
+    </>
   );
 }
